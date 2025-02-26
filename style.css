@@ -1,0 +1,180 @@
+body,
+html {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: white;
+  color: black;
+}
+
+.teko-600 {
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.logo-text {
+  font-size: 2.5em;
+  margin: 2px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+}
+
+.navbar {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-element {
+  color: black;
+  font-size: 1.5em;
+}
+
+.nav-element:hover {
+  cursor: pointer;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#main-container {
+  width: 50%;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.my-info-container {
+  display: flex;
+  background-color: white;
+  width: 60%;
+  margin-top: 40px;
+  min-height: 400px;
+  border-radius: 20px;
+  padding: 10px;
+  gap: 15px;
+  justify-content: center;
+}
+
+.photo-container {
+  width: 20%;
+  min-height: 300px;
+}
+
+.about-me {
+  width: 80%;
+  min-height: 300px;
+  padding: 5px;
+}
+
+.round-image {
+  border-radius: 50%;
+}
+
+.additional-info {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-projects {
+  min-height: 200px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.project-item {
+  width: 100%;
+  min-height: 300px;
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.my-contact-info {
+  width: 60%;
+  background-color: white;
+  min-height: 200px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  min-height: 50px;
+  text-align: center;
+  width: 100%;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
