@@ -38,15 +38,8 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
+  width: 70%;
   gap: 10px;
-}
-
-.navbar {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .nav-element {
@@ -157,28 +150,6 @@ html {
   font-size: 1.3em;
 }
 
-.gallery {
-  background: #eee;
-}
-
-.gallery-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8c8;
-  counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
 .carousel-item img {
   height: 700px;
   object-fit: cover;
@@ -187,17 +158,86 @@ html {
 
 .elements-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+  flex-direction: column;
 }
 
 .info-elem {
+  text-align: start;
   width: 100%;
-  min-height: 150px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+/* Extra-small (mobile) */
+@media (max-width: 500px) {
+}
+
+/* Small (tablet) */
+@media (min-width: 501px) and (max-width: 1200px) {
+}
+
+/* Medium (laptop) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+}
+
+/* Large (external monitor) */
+@media (min-width: 1401px) {
+}
+
+.github {
+  background-color: #000000;
+  transition-duration: 0.5s;
+}
+
+.x {
+  background-color: #000000;
+  transition-duration: 0.5s;
+}
+
+.facebook {
+  background-color: #1877f2;
+  transition-duration: 0.5s;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  transition-duration: 0.5s;
+}
+
+.github:hover {
+  background-color: rgb(61, 61, 61);
+}
+
+.x:hover {
+  background-color: rgb(61, 61, 61);
+}
+
+.twitter:hover {
+  background-color: #58bfff;
+}
+
+.facebook:hover {
+  background-color: #4f7dda;
+}
+
+.linkedin:hover {
+  background-color: #0f9bdb;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.private {
+  text-align: start;
 }

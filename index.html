@@ -31,22 +31,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="nav">
-      <div class="nav-logo">
-        <img src="img/logo-poprawa.webp" width="70px" height="auto" />
-        <div class="logo-text teko-600">Konrad Jop</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Logo (zawsze widoczne) -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="img/logo-poprawa.webp"
+            height="50"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+          <span class="navbar-text">Konrad Jop</span>
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper (menu po prawej) -->
+        <div
+          class="collapse navbar-collapse ms-auto"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">O mnie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-projects-id">Moje projekty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-info">Dane kontaktowe</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="navbar">
-        <div class="nav-element teko-600">O mnie</div>
-        <div class="nav-element teko-600">Moje projekty</div>
-        <div class="nav-element teko-600">Dane kontaktowe</div>
-      </div>
+      <!-- Container wrapper -->
     </nav>
+    <!-- Navbar -->
     <div id="container">
-      <div class="my-info-container">
+      <div class="my-info-container" id="about-me">
         <div class="photo-container">
           <div>
-            <img class="round-image" src="img/my-photo.jpg" width="200px" />
+            <img class="round-image" src="img/my-photo.jpg" width="100%" />
           </div>
           <div class="additional-info roboto">
             <div class="item-list">
@@ -90,7 +128,7 @@
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </div>
       </div>
-      <div class="my-projects roboto">
+      <div class="my-projects roboto" id="my-projects-id">
         <h1>Moje projekty</h1>
         <div
           id="carouselExampleCaptions"
@@ -118,6 +156,12 @@
               data-mdb-target="#carouselExampleCaptions"
               data-mdb-slide-to="2"
               aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleCaptions"
+              data-mdb-slide-to="3"
+              aria-label="Slide 4"
             ></button>
           </div>
           <div class="carousel-inner">
@@ -165,6 +209,22 @@
                 </div>
               </div>
             </div>
+            <div class="carousel-item">
+              <img
+                src="img/projekt4.png"
+                class="mx-auto w-100"
+                alt="Exotic Fruits"
+              />
+              <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="text-white text-center">
+                    <h2>Next</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <button
             class="carousel-control-prev"
@@ -186,28 +246,46 @@
           </button>
         </div>
       </div>
-      <div class="my-contact-info roboto">
+      <div class="my-contact-info roboto" id="contact-info">
         <h1>Kontakt</h1>
         <div class="elements-container">
-          <div class="info-elem private">
+          <div class="private">
             <div>E-mail: konradjop91@gmail.com</div>
             <div>Nr telefonu: 530 927 121</div>
           </div>
+          <div class="social-container">
+            <div class="info-elem linkedin">
+              <a href=" www.linkedin.com/in/konrad-jop-37824a268">
+                <div>
+                  <img src="img/linkedin-2.png" width="80px" />
+                </div>
+              </a>
+            </div>
 
-          <div class="info-elem linkedin">
-            <a href=" www.linkedin.com/in/konrad-jop-37824a268">
-              <div>
-                <img src="img/linkedin.png" width="100px" />
-              </div>
-            </a>
+            <div class="info-elem github">
+              <a href="https://github.com/jopyslaw">
+                <div>
+                  <img src="img/github-2.png" width="80px" />
+                </div>
+              </a>
+            </div>
           </div>
+          <div class="social-container">
+            <div class="info-elem facebook">
+              <a href="https://www.facebook.com/konrad.jop.7">
+                <div>
+                  <img src="img/facebook.png" width="80px" />
+                </div>
+              </a>
+            </div>
 
-          <div class="info-elem github">
-            <a href="https://github.com/jopyslaw">
-              <div>
-                <img src="img/github-logo.png" width="100px" />
-              </div>
-            </a>
+            <div class="info-elem x">
+              <a href="#">
+                <div>
+                  <img src="img/x.png" width="80px" />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
