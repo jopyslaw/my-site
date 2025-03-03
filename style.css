@@ -78,6 +78,7 @@ html {
   padding: 10px;
   gap: 15px;
   justify-content: center;
+  padding-left: 25px;
 }
 
 .photo-container {
@@ -89,6 +90,10 @@ html {
   width: 80%;
   min-height: 300px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 25px;
 }
 
 .round-image {
@@ -158,19 +163,20 @@ html {
 
 .elements-container {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 10px;
   flex-direction: column;
 }
 
 .info-elem {
   text-align: start;
-  width: 100%;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 70px;
+  min-height: 70px;
 }
 
 /* Extra-small (mobile) */
@@ -244,10 +250,36 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   gap: 10px;
 }
 
 .private {
   text-align: start;
+}
+
+.about-me-text {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-right: 5px;
+  margin-top: 20px;
+}
+
+.flex-start {
+  align-items: flex-start;
+
+  justify-content: center;
+}
+
+.private-container {
+}
+
+.all-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-align-left {
+  text-align: left;
 }
